@@ -7,7 +7,7 @@ public:
         // Create a subscriber for the "input_topic"
         subscriber_ = this->create_subscription<std_msgs::msg::String>(
             "input_topic", 10, [this](const std_msgs::msg::String::SharedPtr msg) {
-                processMessage(msg)
+                processMessage(msg);
             });
 
         // Create a publisher for the "output_topic"
