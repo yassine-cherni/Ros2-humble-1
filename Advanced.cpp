@@ -1,7 +1,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
 
-class MyProcessor : public rclcpp::Node {
+class MyProcessor : public rclcpp::Nod {
 public:
     MyProcessor() : Node("my_processor_node") {
         // Create a subscriber for the "input_topic"
