@@ -2,7 +2,7 @@
 #include "sensor_msgs/msg/laser_scan.hpp"
 #include "nav_msgs/msg/occupancy_grid.hpp"
 
-clas MappingNode : public rclcpp::Node {
+class MappingNode : public rclcpp::Node {
 public:
   MappingNode() : Node("mapping_node") {
     subscription_ = create_subscription<sensor_msgs::msg::LaserScan>(
