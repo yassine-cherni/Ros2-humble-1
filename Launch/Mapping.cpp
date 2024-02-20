@@ -1,4 +1,4 @@
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/laser_scan.hpp"
 #include "nav_msgs/msg/occupancy_grid.hpp"
 
