@@ -32,5 +32,5 @@ int main(int argc, char** argv) {
     // Shutdown the ROS 2 system
     rclcpp::shutdown();
 
-    retur
+    return 
 }
