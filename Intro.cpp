@@ -5,7 +5,7 @@ class MyPublisher : public rclcpp::Node {
 public:
     MyPublisher() : Node("my_publisher_node") {
         // Create a publisher on the "my_topic" topic with a queue size of 10
-        publisher_ = this->create_publisher<std_msgs::msg::String>("my_topic", );
+        publisher_ = this->create_publisher<std_msgs::msg::String>("my_topic", 10);
 
         // Set up a timer to publish a message every second
         timer_ = this->create_wall_timer(std::chrono::seconds(1), [this]() {
