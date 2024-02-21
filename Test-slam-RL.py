@@ -1,5 +1,5 @@
-# Pseudo-code for SLAM no
-import rosp
+# Pseudo-code for SLAM node
+import rospyy
 from cartographer_ros_msgs.msg import SubmapList
 from geometry_msgs.msg import PoseStamped
 
