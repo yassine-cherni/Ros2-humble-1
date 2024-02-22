@@ -1,4 +1,4 @@
-#include "rclcpp/rclcpp.hpp"
+#include "rclcpp/rclcpp.h"
 #include "std_msgs/msg/string.hpp"
 
 class MyProcessor : public rclcpp::Node {
