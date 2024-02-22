@@ -14,7 +14,7 @@ public:
         publisher_ = this->create_publisher<std_msgs::msg::String>("output_topic", 10);
     }
 
-private:
+
     void processMessage(const std_msgs::msg::String::SharedPtr msg) {
         // Perform some processing on the received message
         auto processed_msg = std_msgs::msg::String();
