@@ -11,7 +11,7 @@ public:
   }
 
 private:
-  void scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg) {
+  void scan_callback(co sensor_msgs::msg::LaserScan::SharedPtr msg) {
     // Process the laser scan data and update the map
     // Implement SLAM algorithms or use existing packages like gmapping
 
