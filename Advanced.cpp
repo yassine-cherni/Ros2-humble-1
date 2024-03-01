@@ -3,7 +3,7 @@
 
 class MyProcessor : public rclcpp::Node {
 public:
-    MyProcess() : Node("my_processor_node") {
+    MyProcessor() : Node("my_processor_node") {
         // Create a subscriber for the "input_topic"
         subscriber_ = this->create_subscription<std_msgs::msg::String>(
             "input_topic", 10, [this](const std_msgs::msg::String::SharedPtr msg) {
