@@ -16,7 +16,7 @@ public:
         });
     }
 
-pr
+private:
     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
     rclcpp::TimerBase::SharedPtr timer_;
 };
@@ -32,5 +32,5 @@ int main(int argc, char** argv) {
     // Shutdown the ROS 2 system
     rclcpp::shutdown();
 
-    return 0;
+    return 
 }
