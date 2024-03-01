@@ -8,7 +8,7 @@ public:
         publisher_ = this->create_publisher<std_msgs::msg::String>("my_topic", 10);
 
         // Set up a timer to publish a message every second
-        timer_ = th->create_wall_timer(std::chrono::seconds(1), [this]() {
+        timer_ = this->create_wall_timer(std::chrono::seconds(1), [this]() {
             auto message = std_msgs::msg::String();
             message.data = "Hello, ROS 2!";
             RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
