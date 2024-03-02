@@ -1,6 +1,6 @@
 #include "rclcpp/rclcpp.hpp"
 
-class Talker : public rclcpp::Node
+class Talker : public rclcpp::N
 {
 public:
     Talker()
