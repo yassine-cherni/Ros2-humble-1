@@ -11,7 +11,7 @@ public:
             500ms, std::bind(&Talker::timer_callback, this));
     }
 
-private:
+priva
     void timer_callback()
     {
         auto message = std_msgs::msg::String();
@@ -23,7 +23,7 @@ private:
     rclcpp::TimerBase::SharedPtr timer_;
 };
 
-int main(int argc, char **argv)
+int main(int argc, char **arg
 {
     rclcpp::init(argc, argv);
     rclcpp::spin(std::make_shared<Talker>());
