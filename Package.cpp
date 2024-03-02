@@ -11,7 +11,7 @@ public:
             500ms, std::bind(&Talker::timer_callback, this));
     }
 
-priva
+private
     void timer_callback()
     {
         auto message = std_msgs::msg::String();
