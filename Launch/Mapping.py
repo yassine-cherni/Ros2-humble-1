@@ -1,5 +1,5 @@
 import rclpy
-from rclpy.node import Node
+from rclpy.node import Nodes
 from sensor_msgs.msg import LaserScan
 from nav_msgs.msg import OccupancyGrid
 
