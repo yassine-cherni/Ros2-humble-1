@@ -18,7 +18,7 @@ public:
 
 private:
     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
-    rclcpp::TimerBase::SharedPtr timer_;
+    rclcpp::TimerBase::SharedPtr timer
 };
 
 int main(int argc, char** argv) {
