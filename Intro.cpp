@@ -1,7 +1,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
 
-class MyPublisher : public rclcpp::No {
+class MyPublisher : public rclcpp::Node {
 public:
     MyPublisher() : Node("my_publisher_node") {
         // Create a publisher on the "my_topic" topic with a queue size of 10
