@@ -18,4 +18,4 @@ private:
     // Publish the updated map
     auto map_msg = std::make_unique<nav_msgs::msg::OccupancyGrid>();
     // Popular
-for slam mapping ;
+f slam mapping ;
