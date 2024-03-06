@@ -20,7 +20,7 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(os.path.join(
             pkg_share, 'launch', 'rover.launch.py')),
         launch_arguments={'use_ros2_control': 'false',
-                          'use_time': 'true'}.items()
+                          'use_stime': 'true'}.items()
     )
 
     pkg_slam_ros = FindPackageShare(
