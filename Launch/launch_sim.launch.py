@@ -33,7 +33,7 @@ def generate_launch_description():
     )
 
     # Create the launch description and populate
-    return LaunchDescription([ LaunchDescription
+    return LaunchDescription([ 
         start_roue_bot_cmd,
         start_rviz_cmd
     ])
